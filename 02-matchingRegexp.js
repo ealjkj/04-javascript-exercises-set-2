@@ -3,7 +3,7 @@ function toDo(regexp, word) {
     return ': ' + word.match(regexp);
 }
 // A
-regexp = /^\w+ \d{2}, \d{4}$/g;
+regexp = /^((jaun|febru)ary|march|april|may|ju(ne|ly)|august|october|(nov|dec|sept)ember) \d{2}, \d{4}$/gi;
 tests = ['September 29, 1972', 'February 99, 0001', 'June 04, 3000'];
 
 console.log('A. Date format:')
@@ -21,7 +21,7 @@ console.log('\n');
 
 
 // C
-regexp = /[a-zA-Z]+\.(txt|java|cpp)/g;
+regexp = /^[a-zA-Z]+\.(txt|java|cpp)$/g;
 tests = ['test.java', 'program.cpp', 'newReport.txt'];
 
 console.log('C. txt, java, and cpp files with names consisting of only letters')
