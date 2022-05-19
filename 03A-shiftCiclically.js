@@ -6,12 +6,8 @@ function shiftCharacter(c) {
     return String.fromCharCode(c.charCodeAt(0) + 1); 
 }
 
-console.log(shiftCharacter('a'));
-
 function shift(string) {
-    return string.replace(/[a-z\d]/gi, (value) => {
-        return shiftCharacter(value);
-    });   
+    return string.replace(/[a-z\d]/gi, shiftCharacter);   
 }
 
 console.log(shift('aBc'));

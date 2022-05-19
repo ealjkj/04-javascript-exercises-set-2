@@ -3,7 +3,7 @@ function toDo(regexp, word) {
     return ': ' + word.match(regexp);
 }
 // A
-regexp = /^((jaun|febru)ary|march|april|may|ju(ne|ly)|august|october|(nov|dec|sept)ember) \d{2}, \d{4}$/gi;
+regexp = /^((janu|febru)ary|march|april|may|ju(ne|ly)|august|october|(nov|dec|sept)ember) \d{2}, \d{4}$/gi;
 tests = ['September 29, 1972', 'February 99, 0001', 'June 04, 3000'];
 
 console.log('A. Date format:')
